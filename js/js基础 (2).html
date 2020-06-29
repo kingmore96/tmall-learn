@@ -1,0 +1,196 @@
+<html>
+<head>
+
+    <style>
+        .text {
+            display: inline-block;
+            height: 20px;
+            width: 40px;
+            border: 1px solid gray;
+            margin-top: 10px;
+        }
+
+        .r {
+            display: inline-block;
+            height: 20px;
+            width: 13px;
+            padding-top: 10px;
+        }
+
+        .border1 {
+            border-collapse: collapse;
+        }
+    </style>
+    <script>
+        document.write("这是测试的javascript！");
+    </script>
+
+    <script>
+        document.write("这是第二段Javascript！");
+    </script>
+</head>
+
+<script src="hello.js">
+</script>
+
+<script>
+    var x = 10;
+    document.write("变量的值：" + x);
+
+    y = 100;
+    document.write("变量的值：" + y);
+</script>
+
+<script>
+    console.log("start!");
+    z = 10;
+    document.write("一段故意写错的代码！" + z);
+    console.log("end!");
+</script>
+
+<script>
+    var t;
+    document.write("声明但是未赋值的变量t:" + t);
+    document.write("变量类型：" + typeof t);
+    document.write("<br/>")
+    t = 012;
+    document.write("变量类型：" + typeof t);
+    document.write("<br/>")
+    t = 3.14;
+    document.write("变量类型：" + typeof t);
+    document.write("<br/>")
+    t = "你好！";
+    document.write("变量类型：" + typeof t);
+    document.write("<br/>")
+</script>
+
+<script>
+    function print() {
+        document.write("这句话由一个自定义函数print打印！");
+    }
+
+    print();
+
+    function print2(message) {
+        document.write("这句话由一个自定义函数print打印！" + message);
+        document.write("<br/>");
+    }
+
+    print2("第一句话");
+    print2("第二句话");
+
+    function cal(x, y) {
+        return x + y;
+    }
+
+    print2(cal(3, 5));
+</script>
+
+
+<table style="width:800px;height:20px;">
+    <tr>
+        <td style="width:20%;"><input id="cell1" type="text"></td>
+        <td style="width:2%">+</td>
+        <td style="width:20%;"><input id="cell2" type="text"></td>
+        <td style="width:2%">=</td>
+        <td id="cell3" style="width:20%"><input type="text" id="sum"></td>
+        <td style="padding-left:2px;"><input type="button" value="运算" onclick="cal2()"></td>
+    </tr>
+</table>
+
+<script>
+    function cal2() {
+        var v1 = document.getElementById("cell1").value;
+        console.log(v1 + typeof v1);
+        var v2 = document.getElementById("cell2").value;
+        console.log(v2 + typeof v1);
+        var sum = parseInt(v1) + parseInt(v2);
+        console.log(sum);
+        document.getElementById("sum").value = sum;
+    }
+</script>
+
+<table class="border1" border="1">
+    <tr>
+        <td style="width:30%">起始资金</td>
+        <td style="width:40%"><input id="1" type="text"></td>
+        <td style="width:10%">￥</td>
+    <tr>
+
+    <tr>
+        <td>每年收益</td>
+        <td><input id="2" type="text"></td>
+        <td>%</td>
+    <tr>
+
+    <tr>
+        <td>复利年数</td>
+        <td><input id="3" type="text"></td>
+        <td>年</td>
+    <tr>
+
+    <tr>
+        <td>每年追加资金</td>
+        <td><input id="4" type="text"></td>
+        <td>￥</td>
+    <tr>
+
+    <tr align="center">
+        <td colspan="3"><input type="button" value="计算" onclick="cal3()"></td>
+    </tr>
+
+    <tr>
+        <td>本金和</td>
+        <td><input id="5" type="text"></td>
+        <td>￥</td>
+    <tr>
+
+
+    <tr>
+        <td>利息和</td>
+        <td><input id="6" type="text"></td>
+        <td>￥</td>
+    <tr>
+
+
+    <tr>
+        <td>本息和</td>
+        <td><input id="7" type="text"></td>
+        <td>￥</td>
+    <tr>
+
+        <script>
+            function cal3() {
+                var v1 = parseInt(document.getElementById("1").value);
+                var v2 = parseInt(document.getElementById("2").value);
+                var v3 = parseInt(document.getElementById("3").value);
+                var v4 = parseInt(document.getElementById("4").value);
+
+                var bjh = v1 + 9 * v4;
+
+
+                var i = 0;
+                var bxh = 0;
+                for (; i < v3; i++) {
+                    let tmpbxh = v1 * (1 + v2 / 100);
+                    console.log("tmpbxh:"+tmpbxh);
+                    v1 = tmpbxh + v4;
+                    console.log("v1:"+v1);
+                    bxh = tmpbxh;
+                    console.log("bxh:"+bxh);
+                }
+
+                var lxh = bxh - bjh;
+
+                document.getElementById("5").value = bjh;
+                document.getElementById("6").value = lxh;
+                document.getElementById("7").value = bxh;
+            }
+
+        </script>
+
+
+</table>
+
+
+</html>

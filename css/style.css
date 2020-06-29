@@ -1,0 +1,37 @@
+a:link {color:CornflowerBlue;}
+a:visited {color:CornflowerBlue;}
+a:hover {
+color:CornflowerBlue;
+cursor:pointer;
+}
+a:active {color:CornflowerBlue;}
+
+a{
+text-decoration:none;
+font-size:60%;
+}
+
+
+p#e1 a:hover {
+background-color: #f1f1f1;
+}
+
+p#e1 a{
+font-size:95%;
+color: #888;
+display:inline-block;
+padding-top:4px;
+padding-left:5px;
+padding-bottom:4px;
+width:36px;
+letter-spacing:1px;
+}
+
+
+p.b{
+width:40px;
+font-size:75%;
+border:1px solid lightgray;
+margin-left:55px;
+margin-top:5px;
+}

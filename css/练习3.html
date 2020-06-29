@@ -1,0 +1,186 @@
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html" charset="utf8">
+    <link rel="stylesheet" type="text/css" href="style.css"/>
+    <style>
+
+        div#outside {
+            width: 600px;
+            height: 400px;
+            /*border: 1px solid ;*/
+        }
+
+        div#input {
+            padding: 3px;
+        }
+
+        div.message {
+            color: red;
+            font-size: x-small;
+        }
+
+        div.input_message {
+            height: 20px;
+            background-color: lightblue;
+            color: dodgerblue;
+            font-weight: bold;
+            padding: 3px;
+            font-size: 15px;
+        }
+
+        div.input_data {
+            font-size: 13px;
+        }
+
+        span.left {
+            display: block;
+            /*height: 40px;*/
+            width: 100px;
+            /*border: 1px solid ;*/
+            /*margin-top: 30px;*/
+            float: left;
+            margin-top: 15px;
+            margin-left: 20px;
+            padding-top: 5px;
+
+        }
+
+        span.middle {
+            display: block;
+            height: 40px;
+            /*border: 1px solid ;*/
+            /*margin: 30px;*/
+            float: left;
+            width: 155px;
+            padding-top: 15px;
+            margin-left: 8px;
+        }
+
+        span.right {
+            display: inline-block;
+            width: 267px;
+            /*padding: 2px;*/
+            margin: 2px;
+            padding-left: 6px;
+            /*border: 1px solid ;*/
+            background-color: lightgray;
+        }
+
+        span.red {
+            color: red;
+        }
+
+        input::-webkit-input-placeholder {
+            /* placeholder颜色  */
+            color: #aab2bd;
+            /* placeholder字体大小  */
+            font-size: 13px;
+            /* placeholder位置  */
+            text-align: left;
+        }
+
+    </style>
+
+</head>
+
+
+<body>
+<div id="outside">
+    <div class="message">
+        请注意：带有"*"的项目必须填写。
+    </div>
+
+    <div id="input" style="border: 1px solid lightblue">
+        <div class="input_message">
+            请填写您的用户名：
+        </div>
+
+        <div class="input_data">
+            <span class="left">
+                <span class="red">*</span>通行证用户名：
+            </span>
+            <span class="middle">
+                <input type="text" placeholder="请输入用户名"><br/>
+                <a style="font-size:small;padding-top: 10px;text-decoration-line: underline"
+                   href="#nowhere">查看用户名是否已占用</a>
+            </span>
+            <span class="right">
+                用户名由a~z的英文字母（不区分大小写）、0~9的数字、<strong>点</strong>、<strong>减号</strong>或<strong>下划线</strong>组成，长度为3~18个字符，只能以数字或字母开头或结尾，例如：kyzy_001。
+            </span>
+        </div>
+
+        <div style="border: 1px solid blue">
+        </div>
+
+        <div class="input_message">
+            请填写安全设置：<font style="font-weight: lighter;font-size: 13px">(安全设置用于验证账号和找回密码)</font>
+        </div>
+
+        <div class="message" style="font-size: small;padding-left: 5px;padding-top: 5px">
+            以下信息对保证您的账户安全极其重要，请您务必认真填写。
+        </div>
+
+        <div class="input_data">
+            <span class="left">
+                <span class="red">*</span>输入登录密码：<br/>
+                <span class="red">*</span>登录密码确认：<br/>
+            </span>
+            <span class="middle">
+                <input type="password" placeholder="请输入登录密码"><br/>
+                <input type="password" placeholder="登录密码确认"><br/>
+            </span>
+            <span class="right">
+                用户名由a~z的英文字母（不区分大小写）、0~9的数字、<strong>点</strong>、<strong>减号</strong>或<strong>下划线</strong>组成，长度为3~18个字符，只能以数字或字母开头或结尾，例如：kyzy_001。
+                【<a href="#nowhere" style="text-decoration-line: underline;font-size: 12px;font-weight: bolder">更多说明</a>>】
+            </span>
+        </div>
+
+        <div style="border: 1px solid blue">
+        </div>
+
+        <div class="input_data">
+            <span class="left">
+                <span class="red">*</span>输入登录密码：<br/>
+                <span class="red">*</span>登录密码确认：<br/>
+            </span>
+            <span class="middle">
+                <input type="password" placeholder="请输入登录密码"><br/>
+                <input type="password" placeholder="登录密码确认"><br/>
+            </span>
+            <span class="right">
+                用户名由a~z的英文字母（不区分大小写）、0~9的数字、<strong>点</strong>、<strong>减号</strong>或<strong>下划线</strong>组成，长度为3~18个字符，只能以数字或字母开头或结尾，例如：kyzy_001。
+                【<a href="#nowhere" style="text-decoration-line: underline;font-size: 12px;font-weight: bolder">更多说明</a>>】
+            </span>
+        </div>
+
+        <div style="border: 1px solid blue">
+        </div>
+
+
+        <div class="input_data">
+            <span class="left">
+                <span class="red">*</span>输入登录密码：<br/>
+                <span class="red">*</span>登录密码确认：<br/>
+            </span>
+            <span class="middle">
+                <input type="password" placeholder="请输入登录密码"><br/>
+                <input type="password" placeholder="登录密码确认"><br/>
+            </span>
+            <span class="right">
+                用户名由a~z的英文字母（不区分大小写）、0~9的数字、<strong>点</strong>、<strong>减号</strong>或<strong>下划线</strong>组成，长度为3~18个字符，只能以数字或字母开头或结尾，例如：kyzy_001。
+                【<a href="#nowhere" style="text-decoration-line: underline;font-size: 12px;font-weight: bolder">更多说明</a>>】
+            </span>
+        </div>
+
+        <div style="border: 1px solid blue">
+        </div>
+
+        <div style="padding-left: 240px;padding-top: 10px;padding-bottom: 10px">
+            <button type="submit">提交表单</button>
+        </div>
+    </div>
+
+</div>
+
+</body>
+</html>

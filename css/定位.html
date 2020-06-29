@@ -1,0 +1,132 @@
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html" charset="utf8">
+<link rel="stylesheet" type="text/css" href="style.css" />
+<style>
+
+
+div.parent{
+position:absolute;
+left:100px;
+top:50px;
+border:1px solid red;
+}
+
+
+div.ab{
+position:absolute;
+left:10px;
+top:20px;
+border:1px solid red;
+}
+
+img#i1{
+position:absolute;
+left:60px;
+top:40px;
+z-index:-2;
+}
+
+
+img#i2{
+position:absolute;
+left:20px;
+top:80px;
+z-index:-1;
+}
+
+div.xd{
+position: relative;
+  left:0;
+  top:0;
+}
+
+div.jd{
+position: absolute;
+  left:120;
+  top:0;
+}
+
+div{
+width:400px;
+}
+
+img#i3{
+float:left;
+}
+
+img#i4{
+float:left;
+}
+
+div.clear{
+clear:left;
+}
+
+
+
+</style>
+		
+	</head>
+
+
+	<body>
+
+<div>正常文字1</div>
+<div>正常文字2</div>
+<div class="xd">
+<div class="jd">相对定位的文字3</div>
+</div>
+<div>正常文字4</div>
+<div>正常文字5</div>
+
+<br/>
+
+
+
+<img id="i3" src="https://how2j.cn/example.gif"/>
+<div>当图片不浮动时，文字就会换行出现在下面 当图片不浮动时，文字就会换行出现在下面 当图片不浮动时，文字就会换行出现在下面 当图片不浮动时，文字就会换行出现在下面 当图片不浮动时，文字就会换行出现在下面 当图片不浮动时，文字就会换行出现在下面 </div>
+
+<br/>
+
+
+<img id="i4" src="https://how2j.cn/example.gif"/>
+<div class="clear">当图片不浮动时，文字就会换行出现在下面 当图片不浮动时，文字就会换行出现在下面 当图片不浮动时，文字就会换行出现在下面 当图片不浮动时，文字就会换行出现在下面 当图片不浮动时，文字就会换行出现在下面 当图片不浮动时，文字就会换行出现在下面 </div>
+
+
+<br/>
+
+<div class="block">
+<div>
+块级元素
+</div>
+
+<span>内联元素1</span>
+<span>内联元素2</span>
+<span>内联元素3</span>
+</div>
+
+<div class="inline">
+<div>
+块级元素
+</div>
+
+<span>内联元素1</span>
+<span>内联元素2</span>
+<span>内联元素3</span>
+</div>
+
+
+<div class="inline-block">
+<div>
+块级元素
+</div>
+
+<span>内联元素1</span>
+<span>内联元素2</span>
+<span>内联元素3</span>
+</div>
+
+
+	</body>
+</html>

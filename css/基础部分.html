@@ -1,0 +1,457 @@
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html" charset="utf8">
+<link rel="stylesheet" type="text/css" href="style.css" />
+<style>
+table#e1{
+table-layout:fixed
+}
+p{
+color:red;
+}
+h1{
+color:red;
+}
+#a1{
+color:blue;
+}
+
+.pre{
+color:yellow;
+}
+.after{
+color:red;
+}
+
+#percent{
+width:50%;
+height:50%;
+background-color:pink;
+}
+
+#pix{
+width:190px;
+height:500px;
+background-color:green;
+}
+
+.gray{
+background-color:gray;
+}
+
+#touming{
+background-color:transparent;
+}
+
+#zise{
+background-color:rgb(250,0,255)
+}
+
+#lvse{
+background-color:#00ff00
+}
+
+div#image{
+background-image:url(background.jpg);
+width:200px;
+height:100px;
+}
+
+div#nopingpu{
+background-image:url(background_small.jpg);
+width:200px;
+height:100px;
+background-repeat:no-repeat;
+}
+
+div#pingpu{
+background-image:url(background_small.jpg);
+width:200px;
+height:100px;
+background-repeat:repeat-x;
+}
+
+
+div#lashen{
+background-image:url(background_small.jpg);
+width:200px;
+height:100px;
+background-size:contain;
+}
+
+div,span{
+border:1px gray solid;
+margin:10px
+}
+
+div#left{
+text-align:left;
+}
+
+div#center{
+text-align:center;
+}
+
+div#right{
+text-align:right;
+}
+
+span#right{
+text-align:right;
+}
+
+h1#up{
+text-decoration:overline;
+}
+
+h2#down{
+text-decoration:underline;
+}
+
+h3#del{
+text-decoration:line-through
+}
+
+p{
+width:100px;
+}
+
+p#lineheight{
+line-height:300%;
+letter-spacing:2;
+text-indent:50;
+}
+
+p#pre{
+white-space:pre;
+}
+
+
+p#prewrap{
+white-space:pre-wrap;
+}
+
+p#nowrap{
+white-space:nowrap;
+}
+
+table#e1{
+border-collapse:collapse;
+width:500px;
+}
+
+td{
+width:25%;
+text-align:center;
+}
+
+tr.odd{
+background-color:#f8f8f8;
+}
+
+tr{
+  border-bottom-style:solid;
+  border-bottom-color:lightgray;
+  border-bottom-width:1px;
+}
+
+tr.head{
+border-bottom-width:2px;
+}
+
+div#e2{
+width:0px;
+border-top-style:solid;
+border-top-color:red;
+border-top-width:10px;
+border-left-style:solid;
+border-left-color:white;
+border-left-width:10px;
+border-right-style:solid;
+border-right-color:white;
+border-right-width:10px;
+border-bottom-style:solid;
+border-bottom-color:white;
+border-bottom-width:10px;
+}
+
+table#e3{
+width:500px;
+}
+
+td.e3{
+width:25%;
+border-bottom-style:solid;
+border-bottom-color:lightblue;
+border-bottom-width:2px;
+}
+
+div#padding{
+padding-left:50px;
+padding-top:50px;
+padding-bottom:200px;
+}
+
+div#margin{
+width:20px;
+padding:20px;
+margin:20px;
+border:1px solid red;
+}
+
+div.other{
+border:1px solid red;
+}
+
+</style>
+		
+	</head>
+
+
+	<body>
+		<p>Hello world</p>
+		<p style="color:green">Hello world中国</p>
+		<h1 id="a1">未设置居中的标题</h1>
+		<h1 id="a2" align="center">设置居中的标题</h1>
+
+<table border="1">
+  <tr >
+      <td>1</td>
+      <td>2</td>
+  </tr>
+  
+  <tr>
+      <td>3</td>
+      <td>4</td>
+  </tr>
+  
+  <tr>
+      <td>a</td>
+      <td>b</td>
+  </tr>
+  
+</table>
+
+<p class="pre">第一类</p>
+<p class="pre">第一类</p>
+<p class="pre">第一类</p>
+
+<p class="after">第二类</p>
+<p class="after">第二类</p>
+<p class="after">第二类</p>
+
+<p id="percent">按照比例设置 50%，50%</p>
+<p id="pix">按照像素设置 190，1800</p>
+
+<p class="gray">灰色</p>
+<h1 id="touming">透明背景</h1>
+<h1 id="zise">紫色</h1>
+<h1 id="lvse">绿色背景</h1>
+
+<div id="image">
+这是一个测试div
+</div>
+
+<br/>
+
+<div id="nopingpu">
+测试不平铺
+</div>
+
+<br/>
+
+<div id="pingpu">
+测试水平平铺
+</div>
+
+<br/>
+
+<div id="lashen">
+测试拉伸
+</div>
+
+<br/>
+
+
+<div id="left">左对齐</div>
+<div id="center">居中</div>
+<div id="right">右对齐</div>
+<span id="right">右对齐</span>
+
+<h1 id="up">上划线</h1>
+<h2 id="down">下划线</h2>
+<h3 id="del">删除线</h3>
+
+<p>
+默认行间距
+默认行间距
+默认行间距
+默认行间距
+默认行间距
+</p>
+
+<p id="lineheight">
+修       改行间距
+修改    行间距
+修改  行间距
+修改  行间距
+修改行间距
+</p>
+
+<p id="pre">
+修       改行间距
+修改    行间距
+修改  行间距
+修改  行间距
+修改行间距
+</p>
+
+<p id="prewrap">
+修       改行间距
+修改    行间距
+修改  行间距
+修改  行间距
+修改行间距
+</p>
+
+<p id="nowrap">
+修       改行间距
+修改    行间距
+修改  行间距
+修改  行间距<br/>
+修改行间距
+</p>
+
+<table id="e1">
+<tr class="head">
+<td >
+id
+</td>
+<td >
+名称
+</td>
+<td >
+血量
+</td>
+<td >
+伤害
+</td>
+</tr>
+
+
+<tr class="odd">
+<td>
+1
+</td>
+<td>
+garren
+</td>
+<td>
+340
+</td>
+<td>
+58
+</td>
+</tr>
+
+<tr class="even">
+<td>
+2
+</td>
+<td>
+teemo
+</td>
+<td>
+320
+</td>
+<td>
+76
+</td>
+</tr>
+
+<tr  class="odd">
+<td>
+3
+</td>
+<td>
+annie
+</td>
+<td>
+380
+</td>
+<td>
+38
+</td>
+</tr>
+
+<tr  class="even">
+<td>
+4
+</td>
+<td>
+deadbrother
+</td>
+<td>
+400
+</td>
+<td>
+90
+</td>
+</tr>
+
+<tr>
+</tr>
+
+</table>
+
+
+<div id="e2">
+
+</div>
+
+<table id="e3">
+<tr>
+<td class="e3">商品</td>
+<td class="e3">数量</td>
+<td class="e3">价格</td>
+<td class="e3">小计</td>
+</tr>
+</table>
+
+<div id="padding">
+测试内边距
+</div>
+
+<div class="other">
+其他元素
+</div>
+
+
+<div id="margin">
+测试边框模型
+</div>
+
+
+<div class="other">
+其他元素
+</div>
+
+<a id="chaolian" target="_blank" href="http://www.baidu.com">百度访问</a>
+<br/>
+
+<a class="a"  href="#nowhere">武器</a>
+<a class="a"  href="#nowhere">护甲</a>
+<a class="a"  href="#nowhere">英雄</a>
+
+<p id="e1" class="b">
+<a href="#nowhere">盖伦</a><br/>
+<a href="#nowhere">盖伦</a><br/>
+<a href="#nowhere">盖伦</a><br/>
+<a href="#nowhere">盖伦</a><br/>
+</p>
+
+
+
+
+	</body>
+</html>
